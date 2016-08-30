@@ -1,3 +1,5 @@
+#Find the sum of even valued Fibonacci terms below four million.
+
 term1 = 1
 term2 = 2
 term3 = 0
@@ -12,3 +14,5 @@ while term3 < 4000000:
 
 print(term3)
 print(sums)
+
+#Answer: 4613732

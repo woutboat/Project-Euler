@@ -1,3 +1,5 @@
+#Find the sum of all multiples of 3 or 5 below 1000
+
 sum = 0
 for x in range(3,1000):
     print(x)
@@ -6,3 +8,5 @@ for x in range(3,1000):
         print(" SUM  -- " + str(sum))
 
 print(sum)
+
+#Answer: 233168
