@@ -15,3 +15,5 @@ def eratosthenes():
         q += 1
 
 print(sum(takewhile(lambda x: x < 2000000, eratosthenes())))
+
+#answer 142913828922
