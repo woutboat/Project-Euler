@@ -41,3 +41,5 @@ for y, row in enumerate(grid):
                     greatest_product = product
 
 print(greatest_product)
+
+#answer 70600674
