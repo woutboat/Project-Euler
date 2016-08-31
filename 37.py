@@ -8,3 +8,9 @@ def primeFind(number):
 				return False # is not prime
 			number //= factor
 	return True # is prime!
+
+def checkLeft(number):
+	
+
+for i in range(8, 500000):
+	if primeFind(i):
