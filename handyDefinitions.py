@@ -1,29 +1,7 @@
-def toString(List):
-    return ''.join(List)
-
 def checkOdd(num):
     butt = True
     for i in range(0,len(str(num))):
         if int(str(num)[i]) % 2 == 0:
-            butt = False
-    if butt:
-        return True
-    else:
-        return False
-
-def checkOdd2(num):
-    butt = True
-    if int(num) % 3 == 0:
-        butt = False
-    if butt:
-        return True
-    else:
-        return False
-
-def checkOdd3(num):
-    butt = True
-    for i in range(0,len(str(num))):
-        if int(str(num)[i]) % 5 == 0:
             butt = False
     if butt:
         return True
@@ -41,9 +19,6 @@ def primeFind(number):
             number //= factor
     return True # is prime!
 
-su = 0
-potat = True
-
 def permute(a, l, r):
     global su
     global potat
@@ -60,22 +35,27 @@ def permute(a, l, r):
             permute(a, l+1, r)
             a[l], a[i] = a[i], a[l]
 
-print(su)
+def is_pandigital(nr, n):
+    nr = str(nr)
+    beg=nr[0:n]
+    end=nr[-n:]
+    for i in map(str, range(1, n + 1)):
+        if i not in beg or i not in end:
+            return False
+    return True
 
-numbers = [2,3,5]
+def F(n):
+    print(n)
+    if n == 0: return 0
+    elif n == 1: return 1
+    else: return F(n-1)+F(n-2)
 
-for i in range(2,1000001):
-    print("Checking: " + str(i))
-    su = 0
-    string = i
-    n = len(str(string))
-    a = list(str(string))
-    if checkOdd(i) and checkOdd2(i) and checkOdd3(i):
-        permute(a, 0, n-1)
-        if potat:
-            numbers.append(i)
-    potat = True
+def counter(n):
+    if n > 0:
+        digits = int(math.log10(n))+1
+    elif n == 0:
+        digits = 1
+    else:
+        digits = int(math.log10(-n))+2
 
-print(numbers)
-print(len(numbers))
-
+    return digits
