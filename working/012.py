@@ -10,7 +10,19 @@ def triNumber(number):
 potato = True
 num = 1
 tmp = 0
-tmp2 = []
+tmp2 = 0
 
 while potato:
 	tmp = triNumber(num)
+	tmp2 = len(factors(tmp))
+	if tmp2 > 500:
+		potato = False
+		print(num)
+		print("Found number of factors - " + str(tmp2))
+		print(tmp)
+	else:
+		tmp = 0
+		tmp2 = 0
+		num += 1
+
+#Answer: 76576500
