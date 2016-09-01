@@ -26,3 +26,5 @@ for o in range(1,10001):
 			ehh.append(p)
 
 print(arrSum(ehh))
+
+#answer 31626
