@@ -21,7 +21,7 @@ ehh = []
 
 for o in range(1,10001):
 	print(o)
-	for p in range(1,10001):
+	for p in range(1,o + 1):
 		if a(o) == b(p):
 			ehh.append(o)
 			ehh.append(p)
