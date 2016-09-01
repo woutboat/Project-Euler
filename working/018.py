@@ -25,3 +25,5 @@ triangle = [  # Mutable
 ]
 
 print(compute())
+
+#answer 1074
