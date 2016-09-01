@@ -5,3 +5,5 @@ ans = sum(1
 		for m in range(1, 13)
 		if datetime.date(y, m, 1).weekday() == 6)
 print(str(ans))
+
+#answer 171
