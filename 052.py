@@ -17,7 +17,7 @@ while potato:
 	for i in range(2,7):
 		if sum_digits(num) == sum_digits(testMult(num, i)):
 			counter += 1
-	#print(str(num) + str(counter))
+	print(str(num) + " - " + str(counter))
 	if counter == 6:
 		potato = False
 	else:
