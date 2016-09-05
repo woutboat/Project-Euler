@@ -10,4 +10,9 @@ def sum_digits(n):
 
 potato = True
 
+num = 1
+
 while potato:
+	for i in range(2,7):
+		if sum_digits(num) == sum_digits(testMult(num, i)):
+			
