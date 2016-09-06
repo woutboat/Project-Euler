@@ -11,7 +11,7 @@ def sum_digits(n):
 potato = True
 
 num = 125874
-counter = 200000
+counter = 0
 
 while potato:
 	if sum_digits(num) == sum_digits(testMult(num, 2)):
