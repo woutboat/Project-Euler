@@ -18,10 +18,12 @@ while potato:
 		counter += 1
 		if sum_digits(num) == sum_digits(testMult(num, 3)):
 			counter += 1
-			for i in range(4,7):
-				if sum_digits(num) == sum_digits(testMult(num, i)):
-					counter += 1
-					print(str(num) + " - " + str(counter))
+			if sum_digits(num) == sum_digits(testMult(num, 4)):
+				counter += 1
+				for i in range(5,7):
+					if sum_digits(num) == sum_digits(testMult(num, i)):
+						counter += 1
+						print(str(num) + " - " + str(counter))
 	if counter == 6:
 		potato = False
 	else:
