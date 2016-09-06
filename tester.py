@@ -13,3 +13,7 @@ def sum_digits(n):
 	return s
 
 print(sum_digits(num) == sum_digits(testMult(num, 2)))
+print(sum_digits(num) == sum_digits(testMult(num, 3)))
+print(sum_digits(num) == sum_digits(testMult(num, 4)))
+print(sum_digits(num) == sum_digits(testMult(num, 5)))
+print(sum_digits(num) == sum_digits(testMult(num, 6)))

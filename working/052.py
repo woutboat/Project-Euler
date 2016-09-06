@@ -10,24 +10,17 @@ def sum_digits(n):
 
 potato = True
 
-num = 125874
+num = 125875
 counter = 0
 
 while potato:
 	if sum_digits(num) == sum_digits(testMult(num, 2)):
-		counter += 1
 		if sum_digits(num) == sum_digits(testMult(num, 3)):
-			counter += 1
 			if sum_digits(num) == sum_digits(testMult(num, 4)):
-				counter += 1
-				for i in range(5,7):
-					if sum_digits(num) == sum_digits(testMult(num, i)):
-						counter += 1
-						print(str(num) + " - " + str(counter))
-	if counter == 6:
-		potato = False
-	else:
-		num += 1
-		counter = 0
+				if sum_digits(num) == sum_digits(testMult(num, 5)):
+					if sum_digits(num) == sum_digits(testMult(num, 6)):
+						potato = False
+	num += 1
+print(num - 1)
 
-print(num)
+#answer 142857
