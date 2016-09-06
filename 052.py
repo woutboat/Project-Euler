@@ -11,7 +11,7 @@ def sum_digits(n):
 potato = True
 
 num = 1
-counter = 0
+counter = 200000
 
 while potato:
 	for i in range(2,7):
